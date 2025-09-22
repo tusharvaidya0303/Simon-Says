@@ -5,7 +5,6 @@ let btns = ["red", "green", "blue", "yellow"]; // Available button colors
 
 let started = false; // Tracks if the game has started
 let level = 0; // Current level (score)
-let highScore = 0; // Highest score achieved so far ✅
 
 let h2 = document.querySelector("h2"); // Heading element to display messages
 
@@ -66,7 +65,7 @@ function checkAns(idx) {
     }
 
     // Show game over message with current score & high score
-    h2.innerHTML = `Game Over! Your score was <b>${level}</b> <br> Highest Score: <b>${highScore}</b> <br> Press Any Key to Restart`;
+    h2.innerHTML = `Game Over! Your score was <b>${level}</b> <br> Press Any Key to Restart`;
 
     // Flash red background for game over effect
     document.querySelector("body").style.backgroundColor = "red";
