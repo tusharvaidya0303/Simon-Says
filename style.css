@@ -30,30 +30,54 @@ h2{
     width: 200px;
     height: 200px;
     margin: 2rem;
-    border: 10px solid #333;
     border-radius: 10%;
     cursor: pointer;
-    transition: transform 0.1s;
-    box-shadow: 0 4px #999;
 }
 .container{
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: #fff;
-    padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    max-width: 600px;
+    margin: auto;
 }
 .red{
     background-color: #ff4d4d;
+    border: 5px solid #ff1a1a;
+    box-shadow: 0 4px #cc0000;
+    transition: background-color 0.2s, box-shadow 0.2s;
 }
 .green{
     background-color: #4dff4d;
+    border: 5px solid #1aff1a;
+    box-shadow: 0 4px #00cc00;
+    transition: background-color 0.2s, box-shadow 0.2s;
 }
 .blue{
     background-color: #4d4dff;
+    border: 5px solid #1a1aff;
+    box-shadow: 0 4px #0000cc;
+    transition: background-color 0.2s, box-shadow 0.2s;
 }
 .yellow{
     background-color: #ffff4d;
+    border: 5px solid #ffff1a;
+    box-shadow: 0 4px #cccc00;
+    transition: background-color 0.2s, box-shadow 0.2s;
+}
+.flash{
+    background-color: black;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    transform: scale(1.1);
+    animation: flash 1s infinite alternate;
+}
+.userFlash{
+    background-color: white;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
+    transform: scale(1.1);
+    animation: userFlash 0.5s;
+    pointer-events: none;
 }
